@@ -8,9 +8,7 @@ def fum(m, n):
     if 0 <= m <= n:
         return fum(m, n - 1) + fum(m - 1, n - 1)
 
-
-m = int(input())
-n = int(input())
-
 if __name__ == '__main__':
+    m = int(input())
+    n = int(input())
     print(fum(m, n))
